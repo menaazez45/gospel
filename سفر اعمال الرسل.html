@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنجيل متى</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        #content {
+            padding: 20px;
+        }
+        .chapter {
+            display: none;
+        }
+        .chapter.active {
+            display: block;
+        }
+        footer {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showChapter(chapterId) {
+            const chapters = document.querySelectorAll('.chapter');
+            chapters.forEach(chapter => chapter.classList.remove('active'));
+            document.getElementById(chapterId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>إنجيل مرقس</h1>
+    </header>
+
+    <div id="content">
+        <div id="chapter1" class="chapter active">
+
+        </div>
+    </div>
+    <footer>
+        © 2024 إنجيل مرقس
+    </footer>
+</body>
+</html>
